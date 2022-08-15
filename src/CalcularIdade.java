@@ -1,19 +1,14 @@
-package datatime;import java.text.DateFormat;
-import java.text.ParseException;
-import java.text.SimpleDateFormat;
 import java.time.DayOfWeek;
 import java.time.LocalDate;
 import java.time.Period;
 import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
-import java.util.Calendar;
-import java.util.Date;
 import java.util.List;
 import java.util.Locale;
 
 public class CalcularIdade {
 	
-	public static void formatarData(List<Pessoa> listaDePessoa) throws ParseException {
+	public static void formatarData(List<Pessoa> listaDePessoa)  {
 		DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy/MM/dd", new Locale("pt", "BR"));
 		
 		for(int i = 0; i< listaDePessoa.size(); i++) {
@@ -37,7 +32,7 @@ public class CalcularIdade {
 
 	
 	
-	public static void main(String[] args) throws ParseException {
+	public static void main(String[] args) {
 		List<Pessoa> listaDePessoa = new ArrayList<Pessoa>();
 		Pessoa pessoa = new Pessoa();
 		
